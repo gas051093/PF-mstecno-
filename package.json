@@ -1,0 +1,21 @@
+{
+  "name": "mstecno",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass/style.scss styles/main.css"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gas051093/mstecno.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gas051093/mstecno/issues"
+  },
+  "homepage": "https://github.com/gas051093/mstecno#readme",
+  "description": ""
+}
