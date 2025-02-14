@@ -1,0 +1,27 @@
+
+
+
+.hero{
+
+    &__title{
+        color: $color_primary;
+    }
+    &__text{
+        color: $color_primary;
+    }
+    &__container{
+        backdrop-filter: blur(4px);
+    }
+    &--home{
+        background-image: url(../assets/img/hero.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    &--galery{
+        background-image: url(../assets/img/hero-galeria.jpg);
+        background-size: cover;
+        background-position: bottom;
+        height: 100vh;
+    }
+}

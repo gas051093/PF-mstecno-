@@ -1,8 +1,12 @@
 /*import var*/
 @import './variable/reset';
 @import './variable/colors';
-@import './variable/font';
 
 /*import layout*/
 @import './layouts/navbar';
+@import './layouts/hero';
+@import './layouts/about';
+@import './layouts/galery';
 
+
+@import './layouts/foot';
