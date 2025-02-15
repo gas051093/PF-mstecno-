@@ -1,0 +1,10 @@
+
+@mixin hover-scale($scale, $color){
+    transition: 400ms;
+    &:hover{
+        transform: scale($scale);
+        color: map-get($map: $colors, $key: $color);
+        transition: all 0.3s ease-in-out;
+    }
+}
+

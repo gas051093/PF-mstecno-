@@ -1,13 +1,7 @@
 
 .foot{
-    background-color: $color_bg_foot;
-
     &__link{
-        transition: 400ms;
         margin-left: 10px;
-        &:hover{
-            transform: scale(1.2);
-            transition: 400ms;
-        }
+        @include hover-scale(1.2, primary);
     }
 }

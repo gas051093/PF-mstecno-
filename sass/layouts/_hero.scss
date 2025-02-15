@@ -2,15 +2,19 @@
 
 
 .hero{
-
-    &__title{
-        color: $color_primary;
-    }
-    &__text{
-        color: $color_primary;
-    }
     &__container{
         backdrop-filter: blur(4px);
+    }
+    &__title{
+        &--home{
+            @include zoominleft(1s);
+        }
+        &--galery{
+            @include fade-in(1s);
+        }
+    }
+    &__text{
+        @include fade-in(2s);
     }
     &--home{
         background-image: url(../assets/img/hero.jpg);
@@ -23,5 +27,9 @@
         background-size: cover;
         background-position: bottom;
         height: 100vh;
+    }
+    &--contact{
+        height: 50vh;
+        border-radius: 0px 30px
     }
 }

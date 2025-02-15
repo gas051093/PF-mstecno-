@@ -1,10 +1,20 @@
-$color_primary: #F0F7F4;
-$color_secundary: blue;
+/*clases personalizada de colores*/
+/* paleta de colores https://coolors.co/d64045-e9fff9-9ed8db-467599-1d3354*/
 
-$color_bg: red;
-$color_bg_nav: #003049;
-$color_bg_foot: #EAE2B7;
+$colors: (
+    primary: #e9fff9,
+    secondary: #d64045,
+    accent: #eae2b7,
+    dark: #000000,
+    navy: #1d3354,
+    light: white,
+);
 
-$color_txt_title: blue;
-$color_txt_p:black;
-$color_link_white: #ffffff;
+@each $key, $palet in $colors{
+    .g-color-#{$key}{
+        color: $palet;
+    }
+    .g-bg-#{$key}{
+        background-color: $palet;
+    }
+}
