@@ -92,6 +92,16 @@
   color: #e9fff9;
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 992px) {
+  .navbar__link {
+    transition: 400ms;
+  }
+  .navbar__link:hover {
+    transform: scale(1.01);
+    color: #e9fff9;
+    transition: all 0.3s ease-in-out;
+  }
+}
 
 .hero__container {
   backdrop-filter: blur(4px);

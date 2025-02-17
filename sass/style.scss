@@ -1,8 +1,13 @@
 
 @import './variable/reset';
+
 @import './variable/colors';
 @import './mixins/hoverfx';
 @import './mixins/animations';
+@import './variable/mq';
+
+
+
 
 /*import layout*/
 @import './layouts/navbar';
@@ -10,6 +15,8 @@
 @import './layouts/about';
 @import './layouts/galery';
 @import './layouts/contact';
-
-
 @import './layouts/foot';
+
+
+
+

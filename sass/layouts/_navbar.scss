@@ -13,5 +13,10 @@
         }
         
         @include hover-scale(1.2, primary);
+
+        @include media (lg){
+            @include hover-scale (1.01, primary);
+        }
+
     }
 }

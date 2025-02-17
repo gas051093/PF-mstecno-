@@ -1,0 +1,13 @@
+$bp: (
+    sm: 576px,  
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);
+
+@mixin media ($size){
+    @media (max-width: map-get($map: $bp, $key: $size)){
+        @content;
+    }
+}
