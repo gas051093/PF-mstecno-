@@ -17,13 +17,13 @@
         @include fade-in(2s);
     }
     &--home{
-        background-image: url(../assets/img/hero.jpg);
+        background-image: url(../assets/img/hero.webp);
         background-size: cover;
         background-position: center;
         height: 100vh;
     }
     &--galery{
-        background-image: url(../assets/img/hero-galeria.jpg);
+        background-image: url(../assets/img/hero-galeria.webp);
         background-size: cover;
         background-position: bottom;
         height: 100vh;
