@@ -1,6 +1,9 @@
 .hero{
     &__container{
         backdrop-filter: blur(4px);
+        &--contact{
+            background-color: rgba(map-get($map: $colors, $key: navy), 0.4);
+        }
     }
     &__title{
         &--home{
@@ -8,6 +11,9 @@
         }
         &--galery{
             @include fade-in(1s);
+        }
+        &--contact{
+            @include tracking_in(0.8s);
         }
     }
     &__text{
@@ -26,7 +32,9 @@
         height: 100vh;
     }
     &--contact{
-        height: 50vh;
-        border-radius: 0px 30px
+        background-image: url(../assets/img/contacto.webp);
+        background-size: cover;
+        background-position: bottom;
+        height: 100vh;
     }
 }

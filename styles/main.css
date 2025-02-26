@@ -23,11 +23,11 @@
 }
 
 .g-color-accent {
-  color: #eae2b7;
+  color: #03172B;
 }
 
 .g-bg-accent {
-  background-color: #eae2b7;
+  background-color: #03172B;
 }
 
 .g-color-dark {
@@ -74,6 +74,20 @@
     opacity: 1;
   }
 }
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
 /*import layout*/
 .navbar {
   box-shadow: 0px 5px 10px black;
@@ -106,6 +120,9 @@
 .hero__container {
   backdrop-filter: blur(4px);
 }
+.hero__container--contact {
+  background-color: rgba(29, 51, 84, 0.4);
+}
 .hero__title--home {
   animation-name: zoominleft;
   animation-duration: 1s;
@@ -116,6 +133,12 @@
   animation-name: fadeIn;
   animation-duration: 1s;
   animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+.hero__title--contact {
+  animation: tracking-in-expand-fwd;
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   animation-fill-mode: both;
 }
 .hero__text {
@@ -137,8 +160,10 @@
   height: 100vh;
 }
 .hero--contact {
-  height: 50vh;
-  border-radius: 0px 30px;
+  background-image: url(../assets/img/contacto.webp);
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
 }
 
 .about__title {
