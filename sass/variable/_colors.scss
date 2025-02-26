@@ -1,6 +1,5 @@
 /*clases personalizada de colores*/
 /* paleta de colores https://coolors.co/d64045-e9fff9-9ed8db-467599-1d3354*/
-
 $colors: (
     primary: #e9fff9,
     secondary: #d64045,
@@ -9,7 +8,6 @@ $colors: (
     navy: #1d3354,
     light: white,
 );
-
 @each $key, $palet in $colors{
     .g-color-#{$key}{
         color: $palet;

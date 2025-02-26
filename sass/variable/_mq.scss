@@ -5,7 +5,6 @@ $bp: (
     xl: 1200px,
     xxl: 1400px
 );
-
 @mixin media ($size){
     @media (max-width: map-get($map: $bp, $key: $size)){
         @content;

@@ -1,16 +1,13 @@
-
 .about{
     &__title{
         text-shadow: 5px 0px 15px rgba(0, 0, 0, 0.425);
     }
-
     &__text{
         text-align: center;
         &--bold{
             font-weight: bold;
         }
     }
-
     &__img{
         max-width: 100%;
         height: auto;
