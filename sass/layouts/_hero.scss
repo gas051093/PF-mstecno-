@@ -17,7 +17,7 @@
         }
     }
     &__text{
-        @include fade-in(2s);
+        @include fade-in(0.6s);
     }
     &--home{
         background-image: url(../assets/img/hero.webp);
