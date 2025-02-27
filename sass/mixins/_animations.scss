@@ -51,3 +51,35 @@
   animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
   animation-fill-mode: both;
 }
+@keyframes fade_in_right {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@mixin fade_img($duration){
+  animation: fade_in_right;
+  animation-duration: $duration;
+  animation-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  animation-fill-mode: both;
+}
+@keyframes kenburns_top {
+  0% {
+    transform: scale(1) translateY(0);
+    transform-origin: 50% 16%;
+  }
+  100% {
+    transform: scale(1.25) translateY(-15px);
+    transform-origin: top;
+  }
+}
+@mixin kenburns ($duration){
+  animation: kenburns_top;;
+  animation-duration: $duration;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}

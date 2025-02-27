@@ -88,6 +88,26 @@
     opacity: 1;
   }
 }
+@keyframes fade_in_right {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes kenburns_top {
+  0% {
+    transform: scale(1) translateY(0);
+    transform-origin: 50% 16%;
+  }
+  100% {
+    transform: scale(1.25) translateY(-15px);
+    transform-origin: top;
+  }
+}
 /*import layout*/
 .navbar {
   box-shadow: 0px 5px 10px black;
@@ -117,11 +137,23 @@
   }
 }
 
+.hero {
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.6);
+}
 .hero__container {
   backdrop-filter: blur(4px);
 }
 .hero__container--contact {
   background-color: rgba(29, 51, 84, 0.4);
+}
+.hero__container--home {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.hero__logo {
+  animation: fade_in_right;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  animation-fill-mode: both;
 }
 .hero__title--home {
   animation-name: zoominleft;
@@ -143,15 +175,29 @@
 }
 .hero__text {
   animation-name: fadeIn;
-  animation-duration: 2s;
+  animation-duration: 0.6s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
 }
 .hero--home {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.hero--home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url(../assets/img/hero.webp);
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  animation: kenburns_top;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
 }
 .hero--galery {
   background-image: url(../assets/img/hero-galeria.webp);
