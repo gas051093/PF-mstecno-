@@ -149,6 +149,9 @@
 .hero__container--home {
   background-color: rgba(0, 0, 0, 0.6);
 }
+.hero__container--galery {
+  background-color: rgba(0, 0, 0, 0.7);
+}
 .hero__logo {
   animation: fade_in_right;
   animation-duration: 1s;

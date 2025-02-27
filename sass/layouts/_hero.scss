@@ -8,6 +8,9 @@
         &--home{
             background-color: rgba(map-get($map: $colors, $key: dark), 0.6);
         }
+        &--galery{
+            background-color: rgba(map-get($map: $colors, $key: dark), 0.7);
+        }
     }
     &__logo{
         @include fade_img(1s)
