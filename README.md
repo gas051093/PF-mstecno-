@@ -22,13 +22,14 @@ El proyecto utiliza **Sass** con una estructura modular, organizando estilos en:
 - `_mixins/` → Animaciones y efectos.
 - `_variables/` → Paleta de colores y configuraciones.
 
+---
 ## 📸 Optimización de Imágenes
 
 Las imágenes están en formato **WebP**, optimizando el rendimiento en la web.
 
 ---
 
-## 📂 Estructura del proyecto comando usado tree /F /A
+## 📂 Estructura del proyecto
 
 ```
 |   index.html
